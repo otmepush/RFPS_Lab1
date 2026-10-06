@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Зворотній зв’язок — Космопедія</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><img src="img/logo.svg" alt="Логотип Космопедії" width="48" height="48">
+    <span><strong>КОСМОПЕДІЯ</strong><small>Тематична онлайн-енциклопедія про космос</small></span></a>
+  <nav><ul><li><a href="index.html">Головна</a></li><li><a href="planets.html">Розділ про планети</a></li><li><a href="missions.html">Розділ про космічні місії</a></li><li><a href="feedback.html" class="active">Зворотній зв’язок</a></li></ul></nav>
+</header>
+<main class="wide">
+  <h1>Зворотній зв’язок</h1>
+  <p>Заповніть форму — ми відповімо протягом одного робочого дня. Поля, позначені зірочкою (*), обов’язкові.</p>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Персональна інформація</legend>
+      <p><label for="name">1. Прізвище та ім’я *</label><input type="text" id="name" name="name" placeholder="Наприклад: Іваненко Іван" required></p>
+      <p><label for="email">2. E-mail *</label><input type="email" id="email" name="email" placeholder="ivanenko@example.com" required></p>
+      <p><label for="age">3. Вік</label><input type="number" id="age" name="age" min="5" max="120" placeholder="Наприклад: 20"></p>
+      <p><span class="lbl">4. Освіта</span>
+        <label class="inl"><input type="radio" name="edu" value="full"> повна</label>
+        <label class="inl"><input type="radio" name="edu" value="basic"> неповна</label>
+        <label class="inl"><input type="radio" name="edu" value="higher"> вища</label>
+        <label class="inl"><input type="radio" name="edu" value="vocational"> професійна</label></p>
+    </fieldset>
+    <p><label for="goal">5. Мета зворотнього зв’язку *</label>
+      <select id="goal" name="goal" required>
+        <option value="" selected disabled>Оберіть мету звернення</option>
+        <option value="cooperation">співпраця</option>
+        <option value="complaint">скарга на порушення права власності</option>
+        <option value="proposal">пропозиція</option>
+        <option value="error">наявність помилки</option>
+      </select></p>
+    <p><label for="details">6. Детально *</label>
+      <textarea id="details" name="details" rows="6" cols="50" maxlength="500" placeholder="Опишіть ваше звернення (до 500 символів)" required></textarea>
+      <small>Розмір поля обмежено (6 рядків, 50 символів у ширину), максимум — 500 символів.</small></p>
+    <p><label class="inl"><input type="checkbox" name="agree" required> Я погоджуюсь на обробку моїх персональних даних *</label></p>
+    <p><button type="submit">Надіслати</button> <button type="reset" class="alt">Очистити форму</button></p>
+  </form>
+  <p><a class="btn" href="index.html">← На Головну сторінку</a></p>
+</main>
+<footer>
+  <p><b>Космопедія</b> · 01033, м. Київ, вул. Володимирська, 64/13, ауд. 120 · Тел.: +380 (44) 123-45-67, +380 (50) 123-45-67</p>
+  <p><small>© 2026 Космопедія. Навчальний проєкт.</small></p>
+</footer>
+</body>
+</html>
